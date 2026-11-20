@@ -1,4 +1,4 @@
-# MaintiDoc-AGENT
+# FlaskGpt
 
 Assistant conversationnel Flask orienté maintenance, avec spécialités configurables, persistance SQLite, export Markdown et résumé de documents.
 
@@ -13,11 +13,11 @@ cp .env.example .env
 poetry run python app.py
 ```
 
-Ouvrez ensuite http://127.0.0.1:5000. SQLite est initialisé automatiquement dans `instance/maintidoc.sqlite3`. Les fichiers PDF, TXT, Markdown et DOCX jusqu’à 10 Mo peuvent être soumis au résumé; ils sont extraits en mémoire et ne sont pas conservés.
+Ouvrez ensuite http://127.0.0.1:5000. SQLite est initialisé automatiquement dans `instance/FlaskGpt.sqlite3`. Les fichiers PDF, TXT, Markdown et DOCX jusqu’à 10 Mo peuvent être soumis au résumé; ils sont extraits en mémoire et ne sont pas conservés.
 
 ## Configuration
 
-`GROQ_API_KEY` est requis. `LLM_MODEL`, `LLM_BASE_URL` et `MAINTIDOC_DATABASE` sont facultatifs. La clé `OPENAI_API_KEY` peut également être utilisée, mais avec l’URL Groq par défaut il faut toujours une clé Groq; pour OpenAI, configurez aussi `LLM_BASE_URL` avec l’URL appropriée.
+`GROQ_API_KEY` est requis. `LLM_MODEL`, `LLM_BASE_URL` et `FlaskGpt_DATABASE` sont facultatifs. La clé `OPENAI_API_KEY` peut également être utilisée, mais avec l’URL Groq par défaut il faut toujours une clé Groq; pour OpenAI, configurez aussi `LLM_BASE_URL` avec l’URL appropriée.
 
 ## Fonctions
 
